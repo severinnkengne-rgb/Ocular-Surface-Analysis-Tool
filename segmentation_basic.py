@@ -16,3 +16,7 @@ def segment_glands(image_path):
     return thresh
 
 # Ce script transforme une image complexe en une carte binaire (Noir et Blanc)
+# 4. Nettoyage des imperfections (Bruit)
+kernel = np.ones((5,5), np.uint8)
+# On ferme les petits trous noirs à l'intérieur des zones blanches
+cleaned = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)

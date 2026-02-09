@@ -20,3 +20,4 @@ def segment_glands(image_path):
 kernel = np.ones((5,5), np.uint8)
 # On ferme les petits trous noirs à l'intérieur des zones blanches
 cleaned = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+    return cleaned

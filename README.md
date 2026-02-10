@@ -27,4 +27,4 @@ The algorithm was tested on the MGD1-k dataset (1000+ images). Below is the dist
 This work aims to reduce inter-observer variability in MGD diagnosis. By automating the **Meiboscore** system, we provide clinicians with an objective metric to track disease progression.
 
 ---
-**Contact:** *Severin Nkengne* *PhD Researcher - University of Yaoundé 1*
+**Contact:** *Severin Didjeu Nkengne* *PhD Researcher - University of Yaoundé 1*

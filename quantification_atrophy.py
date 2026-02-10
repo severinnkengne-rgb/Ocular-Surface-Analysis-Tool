@@ -24,3 +24,13 @@ def calculate_atrophy(gland_mask_path, eyelid_mask_path):
 # Exemple d'usage :
 # score = calculate_atrophy('chemin/glande.png', 'chemin/paupiere.png')
 # print(f"Taux d'atrophie : {score}%")
+def get_meiboscore(atrophy_percentage):
+    """Convertit le pourcentage d'atrophie en Grade standard de Keio"""
+    if atrophy_percentage < 25:
+        return 0  # Normal
+    elif 25 <= atrophy_percentage < 50:
+        return 1  # Atrophie légère
+    elif 50 <= atrophy_percentage < 75:
+        return 2  # Atrophie modérée
+    else:
+        return 3  # Atrophie sévère
